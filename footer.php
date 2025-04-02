@@ -9,21 +9,6 @@
          ?>
 
       <footer>
-    
-      </footer>
-
-<!-- START STEP 2.7 WP_FOOTER CONTENT -->
-
-
-<?php wp_footer(); ?>
-        <?php // this functions loads the footer content ?>   
-
-
-    <!-- END STEP 2.7 WP_FOOTER CONTENT -->
-
-    </body>
-    </html><?php // END STEP 2.5 BUILD FOOTER ?>
-
      <!-- START STEP 2.21 ADD FOOTER MENUS -->
  <nav>
      <?php wp_nav_menu( array( 
@@ -42,3 +27,18 @@
 
  <p class="copyright">&copy; <?php echo bloginfo('name') ?>, <?php echo date("Y"); ?></p>
  <!-- END STEP 2.21 ADD FOOTER MENUS -->
+      </footer>
+
+<!-- START STEP 2.7 WP_FOOTER CONTENT -->
+
+
+<?php wp_footer(); ?>
+        <?php // this functions loads the footer content ?>   
+
+
+    <!-- END STEP 2.7 WP_FOOTER CONTENT -->
+
+    </body>
+    </html><?php // END STEP 2.5 BUILD FOOTER ?>
+
+    

@@ -19,7 +19,7 @@
  function ashleydupere_theme_scripts() {
      wp_enqueue_style( 'billypoppins', get_stylesheet_uri() );
  }
- add_action( 'wp_enqueue_scripts', 'billypoppins_theme_scripts' );
+ add_action( 'wp_enqueue_scripts', 'ashleydupere_theme_scripts' );
 
  // END STEP 2.9
 
@@ -49,7 +49,7 @@
         // Enable featured images and post thumbnails
 
         add_theme_support( 'automatic-feed-links' );
-        This feature adds RSS feed links to HTML <head>.
+        //This feature adds RSS feed links to HTML <head>.
         
         add_theme_support('title-tag');
         // Adds a custom <title> tag in the <head>
@@ -92,7 +92,7 @@
 
             // START STEP 2.24 ADDING WIDGET SUPPORT
 
-    function billypoppins_widgets_init() {
+    function ashleydupere_widgets_init() {
 
         register_sidebar( array(
             'name'          => 'Widget sidebar',
@@ -104,5 +104,5 @@
         ) );
 
     }
-    add_action( 'widgets_init', 'billypoppins_widgets_init' );
+    add_action( 'widgets_init', 'ashleydupere_widgets_init' );
     // END STEP 2.24 ADDING WIDGET SUPPORT

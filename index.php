@@ -1,9 +1,21 @@
+<?php  // START STEP 2.3
+    // Add this to all your php files for added security
+
+    if (!defined('ABSPATH'))
+        exit; 
+        // Exit if accessed directly. 
+        // Ex: Not being called up directly by index.php or some other theme PHP file
+    ?><!--  START WORDPRESS GET_HEADER CONTENT IN INDEX.PHP -->
+    <?php get_header(); ?>
+    <?php // this function loads the header.php file ?>
+
 
   <!-- START STEP 2.8 ADD H1 AND WORDPRESS LOOP -->
   <h1><?php the_title(); // AUTOMATICALLY ADDS THE PAGE TITLE ?></h1>
   
   <!-- opening flex-container will go here -->
-  
+  <div class="flex-container">
+
   <main id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
   <?php // NOTE IDs AND CLASSES ARE AUTOMATICALLY ADDED HERE ?>
 
@@ -16,7 +28,7 @@
               the_content();
           endwhile;
       else :
-          _e( 'Sorry, no posts matched your criteria.', 'billy-poppins' );
+          _e( 'Sorry, no posts matched your criteria.', 'ashleydupere' );
           // MAKE SURE TO CHANGE BILLY-POPPINS HERE
       endif;
       ?>
@@ -26,34 +38,25 @@
   <!-- END WORDPRESS LOOP --> 
    
   <!-- START STEP 2.20 ADD FLEX CONTAINER -->
-<div class="flex-container">
+
   </main>
   <!-- END STEP 2.20 ADD FLEX CONTAINER -->
-</div>
 
-   <!-- END STEP 2.8 ADD H1 AND WORDPRESS LOOP -->
-  <!-- closing flex-container will go here -->
-
-    <!-- START STEP 2.22 ADD SIDEBAR -->
 
     <?php get_sidebar(); ?>
 
     <!-- END STEP 2.22 ADD SIDEBAR -->
 
+    </div>
+
+<!-- END STEP 2.8 ADD H1 AND WORDPRESS LOOP -->
+<!-- closing flex-container will go here -->
+
+ <!-- START STEP 2.22 ADD SIDEBAR -->
 
 
 
 
-<?php  // START STEP 2.3
-    // Add this to all your php files for added security
-
-    if (!defined('ABSPATH'))
-        exit; 
-        // Exit if accessed directly. 
-        // Ex: Not being called up directly by index.php or some other theme PHP file
-    ?><!--  START WORDPRESS GET_HEADER CONTENT IN INDEX.PHP -->
-    <?php get_header(); ?>
-    <?php // this function loads the header.php file ?>
 
 
     <!--  END WORDPRESS GET_HEADER CONTENT IN INDEX.PHP -->

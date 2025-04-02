@@ -20,7 +20,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <?php // the viewport metatag is what makes a design responsive ?>
         
-        <title></title>
+       
 
 
             <!-- START 2.12 WP_HEAD GET DYNAMIC HEADER CONTENT -->
